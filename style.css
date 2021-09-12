@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* --------nav------ */
+
+.heder{
+    min-height: 500px;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url(images/banner\ 01.jpg);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+}
+nav .fas{
+    display: none;
+}
+.logo{
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.nav-links{
+flex: 1;
+text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 15px;
+    position: relative;
+    margin-right:0px;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+.nav-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 400ms ease-out;
+}
+.nav-links ul li:hover::after{
+    width: 100%;  
+}
+
+/* ----------nave heding ----- */
+.heding{
+    text-align: center;
+    padding-top: 80px;
+}
+
+.heding h2{
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+.heding span{
+    font-size: 20px;
+}
+.heding p{
+    font-size: 10px;
+    color: white;
+    text-transform: uppercase;
+}
+.heding p br{
+    display: none;
+}
+
+/* <!-- --------best places --------- --> */
+
+.best-placese {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    background: rgb(230, 230, 230);
+}
+.best-placese h2{
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.best-placese .container{
+    padding-top: 50px;
+}
+.best-placese img{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    border-radius: 10px;
+    transition: .4s;
+}
+.best-placese img:hover{
+    box-shadow: 0 0 20px 0px rgba(133, 96, 96, 0.7) ;
+}
+.place-name{
+    border: 1px  rgb(rgb(145, 145, 145), green, blue);
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: .5s;
+}
+.place-name h4{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.top-placec {
+    margin-top: 30px;
+}
+.top-placec .row{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.top-placec h2{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-size: 35px;
+    cursor: pointer;
+}
+.top-placec h4{
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+.top-placec p{
+    font-size: 15px;
+    justify-content: space-between;
+}
+.img-big{
+    align-items: center;
+}
+.img-big img{
+    width: 100%;
+    max-height: 500vh;
+    transition: .4s;
+}
+.img-big img:hover{
+    box-shadow: 0 0 20px 0px rgba(133, 96, 96, 0.7) 
+}
+.img-big a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+}
+.img-big button{
+    background-color: #f44336;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.wild-life-heding{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.heding-hr{
+    width: 100% ;
+    height: 2px;
+}
+
+
+
+
+
+
+
+.wild-life{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.wild-life img{
+    width: 100%;
+    max-height: 300px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+}
+.wild-life img:hover{
+    box-shadow: 0 0 20px 0px rgba(133, 96, 96, 0.7)
+}
+.wild-life h1{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+.hillstation{
+    background-color: rgb(228, 228, 228);
+    padding-top: 20px;
+
+}
+.next-page{
+    float: right;
+    align-items: center;
+}
+.next-page a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    color: #0d6efd;
+}
+.next-page a:hover{
+    color: #0dcaf0; 
+}
+.next-page .fas{
+    color: #0d6efd;
+}
+.next-page .fas:hover{
+    color: #0dcaf0;
+}
+
+
+
+
+
+
+@media (max-width:700px){
+
+    /* -------navbar----- */
+    .nav-links ul li{
+        display: block;
+
+    }
+    .nav-links{
+        position: absolute;
+    background:#f44336 ;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: .4s;
+    }
+    nav .fas{
+        display: block;
+        margin: 10px;
+        font-size: 20px;
+        color: white;
+    }
+.next-page span{
+    margin-left: 5px;
+}
+
+     /* -------navbar closed----- */
+
+
+
+}
+
+@media (max-width:500px){
+    .heding h2{
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 40px;
+    }
+    .heding span{
+        font-size: 15px;
+    }
+    .heding p{
+        font-size: 8px;
+        color: white;
+        text-transform: uppercase;
+    }
+    .heding p br{
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+ 
+/* <!-- --------footer--------- --> */
+
+footer {
+padding-top: 30px;
+padding-left: 30px;
+padding-right: 30px;
+padding-bottom: 10px;
+background-color: rgb(151, 151, 151);
+}
+footer h4{
+    text-transform: uppercase;
+    font-size: 15px;
+    color: white;
+}
+footer .row{
+    align-items: center;
+}
+footer p{
+font-size: 10px;
+text-transform: uppercase;
+line-height: 10px;
+color: white;
+}
+.cpyrigt{
+    text-align: center;
+    margin-top: 20px;
+}
+hr{
+    width: 100%;
+    height: 2px;
+    color: white;
+}
+
+
+#preloader{
+    background: black url(images/loder.gif) no-repeat center center;
+    background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 100;
+}
+
